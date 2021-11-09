@@ -23,6 +23,12 @@ namespace Test_20211109
             //ucet1 = new Ucet("Rastislav Zmařil", (float)0.00 200000);
 
         }
+        /*public void ZobrazFormular(Ucet ucet) 
+        {
+            jmeno.Text = ucet.jmeno;
+            stavk.Text = ucet.stavk;
+        }*/
+         
         private void Stavkonta(Ucet ucet)
         {
             //stavk.Text = ucet;
@@ -31,12 +37,17 @@ namespace Test_20211109
 
         private void btnVlozit_Click(object sender, EventArgs e)
         {
-
+            //var mnozstvi = mnozstvi.Mnozstvi(Convert.ToInt32(numVlozv.Value));
+            //MessageBox.Show($"Vloženo {mnozstvi} kč");
         }
 
         private void btnVybrat_Click(object sender, EventArgs e)
         {
+            //var mnozstvi = mnozstvi.Mnozstvi(Convert.ToInt32(numVlozv.Value));
+            //MessageBox.Show($"Vloženo {mnozstvi} kč");
 
+
+            // VOJTĚCH KOUKAL-IT-3-B    
         }
     }
 

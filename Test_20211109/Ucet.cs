@@ -9,40 +9,41 @@ namespace Test_20211109
     class Ucet
     {
         string jmeno;
-        float Stav;
+        float stav;
         const int Maxvklad = 200000;
         int mnozstvi;
         float Limitplatby;
         float Limitvyber;
+        
        
         public Ucet(string Jmeno, float stav) 
         {
             Jmeno = jmeno;
-            Stav = stav;
+            stav = stav;
         }
         public int Vlozit(int mnozstvi)
         {
-            if (Stav + mnozstvi > Maxvklad)
+            if (stav + mnozstvi > Maxvklad)
             {
-                Stav = Maxvklad;
+                stav = Maxvklad;
                 return Maxvklad;
             }
             else
             {
-                Stav += mnozstvi;
+                stav += mnozstvi;
                 return mnozstvi;
             }
         }
         public void Vybrat(int mnozstvi)
         {
-            if(Stav - mnozstvi < 0)
+            if(stav - mnozstvi < 0)
             {
                 if (mnozstvi > Limitvyber)
-                    Stav += Limitplatby;
+                    stav += Limitplatby;
             }
             else 
             {
-                Stav += Limitvyber;
+                stav += Limitvyber;
             }
 
         }

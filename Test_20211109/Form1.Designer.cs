@@ -33,19 +33,23 @@
             this.label2 = new System.Windows.Forms.Label();
             this.jmeno = new System.Windows.Forms.Label();
             this.stavk = new System.Windows.Forms.Label();
-            this.vloznastveni = new System.Windows.Forms.DomainUpDown();
+            this.vlozv = new System.Windows.Forms.DomainUpDown();
             this.vyber = new System.Windows.Forms.DomainUpDown();
             this.btnVlozit = new System.Windows.Forms.Button();
             this.btnVybrat = new System.Windows.Forms.Button();
+            this.platbav = new System.Windows.Forms.DomainUpDown();
+            this.btnPlatba = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnPlatba);
+            this.groupBox1.Controls.Add(this.platbav);
             this.groupBox1.Controls.Add(this.btnVybrat);
             this.groupBox1.Controls.Add(this.btnVlozit);
             this.groupBox1.Controls.Add(this.vyber);
-            this.groupBox1.Controls.Add(this.vloznastveni);
+            this.groupBox1.Controls.Add(this.vlozv);
             this.groupBox1.Controls.Add(this.stavk);
             this.groupBox1.Controls.Add(this.jmeno);
             this.groupBox1.Controls.Add(this.label2);
@@ -97,13 +101,13 @@
             this.stavk.TabIndex = 3;
             this.stavk.Text = "Tady bude stav konta";
             // 
-            // vloznastveni
+            // vlozv
             // 
-            this.vloznastveni.Location = new System.Drawing.Point(6, 154);
-            this.vloznastveni.Name = "vloznastveni";
-            this.vloznastveni.Size = new System.Drawing.Size(94, 20);
-            this.vloznastveni.TabIndex = 4;
-            this.vloznastveni.Text = "Vlotiž";
+            this.vlozv.Location = new System.Drawing.Point(6, 154);
+            this.vlozv.Name = "vlozv";
+            this.vlozv.Size = new System.Drawing.Size(94, 20);
+            this.vlozv.TabIndex = 4;
+            this.vlozv.Text = "Vlotiž";
             // 
             // vyber
             // 
@@ -133,6 +137,23 @@
             this.btnVybrat.UseVisualStyleBackColor = true;
             this.btnVybrat.Click += new System.EventHandler(this.btnVybrat_Click);
             // 
+            // platbav
+            // 
+            this.platbav.Location = new System.Drawing.Point(6, 206);
+            this.platbav.Name = "platbav";
+            this.platbav.Size = new System.Drawing.Size(94, 20);
+            this.platbav.TabIndex = 8;
+            this.platbav.Text = "Platba";
+            // 
+            // btnPlatba
+            // 
+            this.btnPlatba.Location = new System.Drawing.Point(106, 203);
+            this.btnPlatba.Name = "btnPlatba";
+            this.btnPlatba.Size = new System.Drawing.Size(75, 23);
+            this.btnPlatba.TabIndex = 9;
+            this.btnPlatba.Text = "Platba";
+            this.btnPlatba.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -155,9 +176,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DomainUpDown vyber;
-        private System.Windows.Forms.DomainUpDown vloznastveni;
+        private System.Windows.Forms.DomainUpDown vlozv;
         private System.Windows.Forms.Button btnVybrat;
         private System.Windows.Forms.Button btnVlozit;
+        private System.Windows.Forms.Button btnPlatba;
+        private System.Windows.Forms.DomainUpDown platbav;
     }
 }
 
